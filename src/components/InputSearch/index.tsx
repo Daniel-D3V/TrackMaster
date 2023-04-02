@@ -7,10 +7,10 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 type Props = {
-    onSelectFile: (value: any) => void
+    setLoading: (value: boolean) => void
 }
 
-export default function InputSearch() {
+export default function InputSearch({ setLoading }: Props) {
 
     const { push } = useRouter();
 
@@ -32,6 +32,7 @@ export default function InputSearch() {
         })
 
         push(`tracking/${trackingNumber}`)
+        setLoading(true)
     }
 
     const handleKeyDown = (e: any) => {

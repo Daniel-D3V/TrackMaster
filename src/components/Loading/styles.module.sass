@@ -1,0 +1,59 @@
+@use 'variables'
+
+.loading
+    background: variables.$white
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1054
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    .truck
+        width: 330px
+        height: 200px
+        color: variables.$primary_color
+        margin-bottom: 0px
+        transition: 1s ease
+        animation: fade-in 2s ease
+        animation: loop 5s ease infinite
+
+    .terrain
+        width: 500px
+        height: 5px
+        background: #5e2a00
+
+@keyframes fade-in
+    0%
+        transform: scale(0%)
+        position: relative
+        left: -250px
+
+    100%
+        position: relative
+        left: 0px
+
+@keyframes loop
+    0%
+        position: relative
+        left: -150px
+
+    25%
+        position: relative
+        left: 0px
+
+    50%
+        position: relative
+        left: 150px
+
+    75%
+        position: relative
+        left: 100px
+
+    100%
+        position: relative
+        left: -150px

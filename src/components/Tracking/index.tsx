@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react"
+import Loading from "../Loading";
 import TrackingDisplayDetails from "./DisplayDetails";
 import TrackingNotFound from "./NotFound";
 
