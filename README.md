@@ -23,7 +23,7 @@ yarn dev
 ```
 
 ## Developers
-Back-end: <kbd>[Daniel Silva](https://github.com/Daniel-Developement)</kbd>
+Front-end and Back-end: <kbd>[Daniel Silva](https://github.com/Daniel-Developement)</kbd>
 
 ## Contributions
 
