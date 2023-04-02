@@ -9,7 +9,7 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'src/styles')],
   },
   env: {
-    API_URL: 'https://track-master-three.vercel.app',
+    API_URL: 'https://track-master.danielsilva.site',
   }
 }
 
