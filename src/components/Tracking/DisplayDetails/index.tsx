@@ -38,7 +38,7 @@ export default function TrackingDisplayDetails({ data }: Props) {
                 <p className={styles.title}>Detalhes de rastreamento</p>
 
                 <div className={styles.cards}>
-                    {data.events.map((event: any, index: number) => (<TrackingDisplayDetailsCard name={event.description} location={event.location} createdAt={event.createdAt} type={event.details.code} key={index} />))}
+                    {data.events.map((event: any, index: number) => (<TrackingDisplayDetailsCard name={event.description} location={event.location} createdAt={event.createdAt} type={event.code} key={index} />))}
                 </div>
             </div>
         </div>
