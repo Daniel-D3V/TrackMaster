@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Tracking from '@/components/Tracking';
 import styles from './styles.module.sass';
@@ -25,6 +26,7 @@ export default async function TrackingPage({ params, searchParams }: Props) {
                     <Tracking data={response.ok ? data : null} />
                 </div>
             </section>
+            <Footer />
         </>
     )
 }
