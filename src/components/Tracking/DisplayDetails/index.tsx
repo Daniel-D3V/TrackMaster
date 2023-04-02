@@ -9,6 +9,7 @@ type Props = {
 }
 
 export default function TrackingDisplayDetails({ data }: Props) {
+    console.log(data.details)
     return (
         <div className={styles.displaydetails}>
             <div className={styles.header}>
