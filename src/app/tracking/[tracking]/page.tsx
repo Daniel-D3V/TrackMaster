@@ -11,7 +11,7 @@ type Props = {
 export default async function TrackingPage({ params, searchParams }: Props) {
     const { tracking } = params;
 
-    const response = await fetch(process.env.API_URL!, {
+    const response = await fetch(process.env.API_URL! + '/api/tracking', {
         method: 'POST',
         body: JSON.stringify({ trackingNumber: tracking })
     })
