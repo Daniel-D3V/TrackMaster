@@ -3,7 +3,7 @@ import './globals.sass'
 
 export const metadata = {
   title: 'TrackMaster',
-  description: 'Transformando o onge em cada vez mais perto!',
+  description: 'Rastreie seu pacote com facilidade, chega de dor de cabeça!',
 }
 
 export default function RootLayout({
