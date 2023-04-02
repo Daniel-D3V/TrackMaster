@@ -1,0 +1,68 @@
+@use '../../../styles/variables'
+
+.displaydetails
+    display: flex
+    flex-direction: column
+    border-radius: 5px
+    padding: 10px
+
+    .header
+        display: flex
+        justify-content: space-between
+        margin-bottom: 20px
+        border-radius: 5px
+
+        .left
+            display: flex
+            align-items: center
+            gap: 0.5rem
+
+            .icon
+                width: 60px
+                height: 60px
+                display: flex
+                align-items: center
+                justify-content: center
+                background: variables.$primary_color
+                border-radius: 5px
+
+                svg
+                    width: 30px
+                    height: 30px
+                    color: variables.$white
+
+            .details
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+
+                .title
+                    font-size: 1.1rem
+                    font-weight: 800
+                    margin-bottom: 0
+
+                .createdAt
+                    font-size: 0.900rem
+                    margin-bottom: 0
+
+        .right
+            display: flex
+            align-items: center
+
+            .title
+                font-weight: 600
+                margin-bottom: 0
+
+    .details
+        display: flex
+        flex-direction: column
+
+        .title
+            text-align: center
+            font-weight: 600
+            margin-bottom: 15px
+
+        .cards
+            display: flex
+            flex-direction: column
+            gap: 1rem

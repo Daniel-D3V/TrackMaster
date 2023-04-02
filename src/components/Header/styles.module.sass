@@ -1,0 +1,35 @@
+@use '../../styles/variables'
+
+.header
+    padding: 1rem 0
+
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .left
+            display: flex
+            align-items: center
+            text-decoration: none
+            gap: 0.5rem
+
+            .logo
+                width: 50px
+                height: 50px
+
+            .title
+                font-size: 1.2rem
+                font-weight: 800
+                letter-spacing: -.5px
+                margin-bottom: 0
+                color: variables.$black
+
+        .right
+            .button
+                border: 1px solid variables.$primary_color
+                padding: 5px 10px
+                outline: none
+                border-radius: 5px
+                color: variables.$primary_color
+                font-weight: 500

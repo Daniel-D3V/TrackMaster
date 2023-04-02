@@ -1,0 +1,38 @@
+@use '../../../../styles/variables'
+
+.displayDetailsCard
+    display: flex
+    align-items: center
+    justify-content: start
+    gap: 0.5rem
+
+    .icon
+        width: 25px
+        height: 25px
+        border-radius: 50px
+        background: variables.$primary_color
+        display: flex
+        align-items: center
+        justify-content: center
+
+        svg
+            width: 15px
+            height: 15px
+            color: variables.$white
+
+    .details
+        display: flex
+        flex-direction: column
+
+        .title
+            font-weight: 700
+            font-size: 0.85rem
+            margin-bottom: 0px
+
+            .createdAt
+                opacity: 0.7
+                user-select: none
+
+        .description
+            font-size: 0.8rem
+            margin-bottom: 0

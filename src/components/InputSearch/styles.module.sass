@@ -1,0 +1,39 @@
+@use '../../styles/variables'
+
+.InputSearch
+    display: flex
+    align-items: center
+    border: 1px solid variables.$primary_color
+    padding: 10px
+    border-radius: 50px
+    background: variables.$primary_color
+
+    .icon
+        width: 25px
+        height: 25px
+        margin: 0 10px
+        color: variables.$white
+
+    .input
+        width: 350px
+        background: transparent
+        border: none
+        outline: none
+        color: variables.$white
+
+        &::placeholder
+            color: variables.$white
+
+    .button
+        margin: 0 10px
+        border: none
+        outline: none
+        background: transparent
+        display: flex
+        align-items: center
+        justify-content: center
+
+        svg
+            width: 25px
+            height: 25px
+            color: variables.$white
