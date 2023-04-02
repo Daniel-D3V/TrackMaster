@@ -14,7 +14,9 @@ export async function POST(request: Request) {
         const result_data = {} as any;
         result_data.events = [];
         result_data.type = {};
-        result_data.code = trackingNumber
+        result_data.details = {};
+        result_data.details.code = trackingNumber
+        result_data.details.delivered = response[0].eventos.find((item: any) => item.codigo === "BDI") ? true : false
 
         result_data.type.category = response[0].tipoPostal.categoria;
         result_data.type.description = response[0].tipoPostal.descricao;
