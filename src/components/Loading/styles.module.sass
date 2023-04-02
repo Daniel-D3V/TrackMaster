@@ -57,3 +57,33 @@
     100%
         position: relative
         left: -150px
+
+@media screen and (max-width: 720px)
+    .loading
+        .truck
+            width: 100px
+            height: 100px
+
+        .terrain
+            width: calc(100vw - 20px)
+
+    @keyframes loop
+        0%
+            position: relative
+            left: -100px
+
+        25%
+            position: relative
+            left: 0px
+
+        50%
+            position: relative
+            left: 100px
+
+        75%
+            position: relative
+            left: 80px
+
+        100%
+            position: relative
+            left: -100px

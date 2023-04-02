@@ -9,7 +9,7 @@ import styles from './page.module.sass';
 
 export default function RootPage() {
 
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     return (
         <>
