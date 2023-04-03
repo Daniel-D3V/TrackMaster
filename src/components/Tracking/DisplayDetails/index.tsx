@@ -31,7 +31,7 @@ export default function TrackingDisplayDetails({ data }: Props) {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <p className={styles.title}>{data.code}</p>
+                    <p className={styles.title}>{data.details.code}</p>
                 </div>
             </div>
 
