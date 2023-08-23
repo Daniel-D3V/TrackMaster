@@ -8,6 +8,7 @@ export async function POST(request: Request) {
         if (!trackingNumber) return NextResponse.json({ message: 'Missing route parameters' }, { status: 400 })
 
         const response = await rastrearEncomendas([trackingNumber])
+        console.log(response);
 
         if (response[0] && response[0].mensagem && response[0].mensagem.includes('Objeto inválido')) return NextResponse.json({ message: 'Object not found' }, { status: 404 })
 
